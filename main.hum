@@ -1,0 +1,14 @@
+#grab <english>
+#grab <kitchen>
+#grab "coffee.task"
+
+
+
+action.Speak(you, instructions)
+
+   makeCoffee(you, now)
+	
+	when announce = done
+	   say "Thank you!" with sincerity at volume(normal)
+;;
+
