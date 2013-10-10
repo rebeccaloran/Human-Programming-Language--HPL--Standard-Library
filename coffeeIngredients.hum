@@ -2,9 +2,10 @@
  * This file creates the list of ingredients and sets them on the table. 
  *
  */
-#grab <english> 	// allows the usage of basic commands in English such as on(), get(), 
+#grab <english> 	// allows the usage of basic commands in English such as on(), get(),  put(), stand(), walk(), etc
+ 
 #grab <kitchen>		// introduces the appending of objects and tools located within a kitchen to functions from english library
-#grab "coffee.hum"  	// describes what coffee is and how it is made 
+#grab "coffee.task"  	// describes what coffee is and how it is made 
 
    set 'spoonMetal_medium' 
 	on.Table()
