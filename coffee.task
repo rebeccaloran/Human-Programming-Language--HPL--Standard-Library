@@ -1,0 +1,37 @@
+#grab <english>
+#grab <kitchen>
+#grab "prepare.task"
+#grab "filtration.task"
+#grab "presentation.task"
+#grab "cleanup.task"
+#grab "end.task"
+
+#define makeCoffee {
+
+main:
+
+   prepare ingredients 
+	on.Table(you, interact)
+;;
+
+   filtration
+	start with filterCoffee()
+	on.Counter(you, interact)
+;;
+
+   presentation
+;;
+
+   cleanup
+;;
+
+   end
+	when end 
+	   announce = done 
+;;
+
+
+filterCoffee:
+
+   
+#} 
